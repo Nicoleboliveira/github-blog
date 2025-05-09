@@ -6,8 +6,10 @@ export const HeaderContainer = styled.header`
     width: 100%;
     height: auto;
   }
-  .background img {
+  .photo {
     width: 100%;
+    height: 18.5rem;
+    object-fit: cover;
     display: block;
   }
 

@@ -6,7 +6,7 @@ export function Header() {
   return (
     <HeaderContainer>
       <div className="background">
-        <img src={Background} />
+        <img src={Background} className="photo" />
         <div className="Logo">
           <img src={Logo} />
         </div>

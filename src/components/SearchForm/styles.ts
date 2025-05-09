@@ -5,8 +5,7 @@ export const SearchFormContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    padding: 14.8rem 20.57rem;
-
+    padding: 14.8rem 20.57rem 0;
     .title {
       display: flex;
       align-items: center;
