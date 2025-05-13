@@ -19,6 +19,13 @@ export const ProfileCardContainer = styled.div`
     gap: 2rem;
     box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.2);
   }
+  img {
+    width: 100%;
+    max-width: 148px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
 
   .container {
     display: grid;
@@ -33,6 +40,10 @@ export const ProfileCardContainer = styled.div`
         color: ${(props) => props.theme["base-title"]};
       }
 
+      a {
+        all: unset;
+      }
+
       button {
         all: unset;
         display: flex;
@@ -41,6 +52,13 @@ export const ProfileCardContainer = styled.div`
         gap: 0.5rem;
         font-size: 0.75rem;
         color: ${(props) => props.theme["blue"]};
+        padding: 3.5px;
+        cursor: pointer;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.2s ease-in-out;
+      }
+      button:hover {
+        border-bottom: 1px solid ${(props) => props.theme["blue"]};
       }
     }
 
