@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { ProfileCardContainer } from "./styles";
-import { githubAPI } from "../../services/github";
+import { githubProfileAPI } from "../../services/githubProfile.ts";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 interface ProfileData {
@@ -17,7 +17,7 @@ export function ProfileCard() {
 
   useEffect(() => {
     const fetchProfile = async () => {
-      const response = await githubAPI.get("");
+      const response = await githubProfileAPI.get("");
       setProfile(response.data);
     };
 

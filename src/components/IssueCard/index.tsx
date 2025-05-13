@@ -1,79 +1,27 @@
 import { IssueCardContainer } from "./styles";
 
-export function IssueCard() {
+interface IssueCardProps {
+  issues: {
+    id: number;
+    title: string;
+    body: string;
+    formattedDate: string;
+  }[];
+}
+
+export function IssueCard({ issues }: IssueCardProps) {
   return (
     <IssueCardContainer>
       <div className="container">
-        <div className="card">
-          <div className="header">
-            <h2>JavaScript data types and data structures</h2>
-            <h3>Há 1 dia</h3>
+        {issues.map((issue) => (
+          <div className="card" key={issue.id}>
+            <div className="header">
+              <h2>{issue.title}</h2>
+              <h3>{issue.formattedDate}</h3>
+            </div>
+            <p>{issue.body.slice(0, 150)}...</p>
           </div>
-          <p>
-            Programming languages all have built-in data structures, but these
-            often differ from one language to another. This article attempts to
-            list the built-in data structures available ...
-          </p>
-        </div>
-
-        <div className="card">
-          <div className="header">
-            <h2>JavaScript data types and data structures</h2>
-            <h3>Há 1 dia</h3>
-          </div>
-          <p>
-            Programming languages all have built-in data structures, but these
-            often differ from one language to another. This article attempts to
-            list the built-in data structures available ...
-          </p>
-        </div>
-
-        <div className="card">
-          <div className="header">
-            <h2>JavaScript data types and data structures</h2>
-            <h3>Há 1 dia</h3>
-          </div>
-          <p>
-            Programming languages all have built-in data structures, but these
-            often differ from one language to another. This article attempts to
-            list the built-in data structures available ...
-          </p>
-        </div>
-
-        <div className="card">
-          <div className="header">
-            <h2>JavaScript data types and data structures</h2>
-            <h3>Há 1 dia</h3>
-          </div>
-          <p>
-            Programming languages all have built-in data structures, but these
-            often differ from one language to another. This article attempts to
-            list the built-in data structures available ...
-          </p>
-        </div>
-
-        <div className="card">
-          <div className="header">
-            <h2>JavaScript data types and data structures</h2>
-            <h3>Há 1 dia</h3>
-          </div>
-          <p>
-            Programming languages all have built-in data structures, but these
-            often differ from one language to another. This article attempts to
-            list the built-in data structures available ...
-          </p>
-        </div>
-        <div className="card">
-          <div className="header">
-            <h2>JavaScript data types and data structures</h2>
-            <h3>Há 1 dia</h3>
-          </div>
-          <p>
-            Programming languages all have built-in data structures, but these
-            often differ from one language to another. This article attempts to
-            list the built-in data structures available ...
-          </p>
-        </div>
+        ))}
       </div>
     </IssueCardContainer>
   );
