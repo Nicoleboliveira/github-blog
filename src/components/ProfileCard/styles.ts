@@ -17,6 +17,7 @@ export const ProfileCardContainer = styled.div`
     z-index: 1;
     margin-top: 8.75rem;
     gap: 2rem;
+    box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.2);
   }
 
   .container {

@@ -17,7 +17,7 @@ export function IssueDetails() {
             </button>
           </div>
           <h2>JavaScript data types and data structures</h2>
-          <div>
+          <div className="information">
             <span>
               <i className="fa-brands fa-github icon-git"></i>
               cameronwll
@@ -32,6 +32,15 @@ export function IssueDetails() {
               <i className="fa-solid fa-comment icon-comment"></i>5 comentários
             </span>
           </div>
+        </div>
+
+        <div className="content">
+          Programming languages all have built-in data structures, but these
+          often differ from one language to another. This article attempts to
+          list the built-in data structures available in JavaScript and what
+          properties they have. These can be used to build other data
+          structures. Wherever possible, comparisons with other languages are
+          drawn.
         </div>
       </div>
     </IssueDetailsContainer>
