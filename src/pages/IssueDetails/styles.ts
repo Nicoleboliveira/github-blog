@@ -34,6 +34,18 @@ export const IssueDetailsContainer = styled.div`
       justify-content: center;
       align-items: center;
       gap: 0.5rem;
+      cursor: pointer;
+    }
+
+    a {
+      all: unset;
+      color: ${(props) => props.theme["blue"]};
+      font-size: 0.75rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
     }
   }
 
@@ -58,7 +70,9 @@ export const IssueDetailsContainer = styled.div`
   }
 
   .content {
-    display: flex;
+    display: grid;
     padding: 2.5rem 2rem;
+    gap: 1rem;
+    margin-bottom: 7rem;
   }
 `;

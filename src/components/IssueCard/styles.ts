@@ -14,6 +14,8 @@ export const IssueCardContainer = styled.div`
     background: ${(props) => props.theme["base-post"]};
     padding: 2rem;
     border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
 
     .header {
       display: flex;
